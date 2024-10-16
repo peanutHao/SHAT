@@ -6,7 +6,11 @@ In the field of medical imaging, the automatic detection and segmentation of col
 
 ## 2. Architecture
 <img src="images/ari.png">
+<div align="justify"> The network architecture of the proposed model. </div>
+<div align=center>
 <img src="images/SHAT.png">
+</div>
+<div align="justify"> The architecture of the shared hybrid attention transformer model.</div>
 
 ## 3. Implementation
 The proposed architecture is implemented using the PyTorch framework (1.7.1+cu101) with 2 NVIDIA Tesla T4 with 16 GB Memory. 
@@ -19,7 +23,7 @@ The proposed architecture is implemented using the PyTorch framework (1.7.1+cu10
 
 + downloading pvtv2 weights , which can be found in this [download link (Google Drive)](https://https://drive.google.com/drive/folders/1Eu8v9vMRvt-dyCH0XSV2i77lAd62nPXV). 
 
-## 3. Comparative Visualization of Lower-Accuracy Segmentation Methods on five datasets. 
+## 3. Exemplary images and segmentation results obtained by different approaches. 
 <img src="images/result.png">
 
 ## 4. Citation
