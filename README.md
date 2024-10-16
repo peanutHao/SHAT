@@ -5,8 +5,10 @@
 In the field of medical imaging, the automatic detection and segmentation of colon polyps is crucial for the early diagnosis of colorectal cancer. Currently, Transformer methods are commonly employed for colon polyp segmentation tasks, often utilizing dual attention mechanisms. However,  these attention mechanisms typically utilize channel attention and spatial attention in a serial or parallel manner, which increases computational costs and model complexity. To address these issues, we propose a Shared Hybrid Attention Transformer (SHAT) framework, which shares queries and keys, thereby avoiding redundant computations and reducing computational complexity. Additionally, we introduce differential subtraction attention module to enhance feature fusion capability and significantly improve the delineation of polyp boundaries, effectively capture complex image details and edge information involved in the colon polyp images comparing with existing techniques. Our approach overcomes the limitations of existing colon polyp segmentation techniques. Experimental results on a large-scale annotated colon polyp image dataset demonstrate that our method excels in localizing and segmenting polyps of various sizes, shapes, and textures with high robustness.</div>
 
 ## 2. Architecture
+
 ### 2.1 The network architecture of the proposed model.
 <img src="images/ari.png">
+
 ### 2.2 The architecture of the shared hybrid attention transformer model.
 <div align=center>
   <img src="images/SHAT.png">
