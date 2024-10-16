@@ -1,8 +1,8 @@
-# Progressive Group Convolution Fusion Network for Colon Polyp Segmentation
+# Shared Hybrid Attention Transformer Network for Colon Polyp Segmentation
 
 ## 1. Abstract
 <div align="justify">
-In the field of medical imaging, the automatic detection and segmentation of colon polyps is particularly crucial for the early diagnosis of colorectal cancer. However, existing methods often face limitations when processing polyp images, especially under low-contrast and blurred boundary conditions, which hinder the recognition of complex features and thus affect the accuracy and efficiency of diagnosis. The challenge is further compounded by a lack of flexibility and precision in differentiating polyps of various sizes and shapes. To address these challenges, this study presents an advanced segmentation method that integrates a Pyramid Vision Transformer (PVT) encoder with a Convolutional Neural Network (CNN) decoder. The encoder, which utilizes the multi-level transformer modules of the PVT, effectively captures the intricate details and contextual information of the image, enabling precise extraction of complex features within polyp images. The decoder incorporates a Progressive Grouped Convolutional Fusion (PGCF) module that extracts multi-scale features through dilated convolutional kernels with different dilation rates. Coupled with attention mechanisms and differential subtraction strategies, our method not only enhances the feature fusion capability but also significantly improves the delineation of polyp boundaries. By integrating the PGCF module, differential operations, and multi-scale fusion strategies, our approach overcomes the limitations of existing colon polyp segmentation techniques. Experimental results on a large-scale annotated colon polyp image dataset show that our method demonstrates excellent performance and robustness in localizing and segmenting polyps of diverse sizes, shapes, and textures.</div>
+In the field of medical imaging, the automatic detection and segmentation of colon polyps is crucial for the early diagnosis of colorectal cancer. Currently, Transformer methods are commonly employed for colon polyp segmentation tasks, often utilizing dual attention mechanisms. However,  these attention mechanisms typically utilize channel attention and spatial attention in a serial or parallel manner, which increases computational costs and model complexity. To address these issues, we propose a Shared Hybrid Attention Transformer (SHAT) framework, which shares queries and keys, thereby avoiding redundant computations and reducing computational complexity. Additionally, we introduce differential subtraction attention module to enhance feature fusion capability and significantly improve the delineation of polyp boundaries, effectively capture complex image details and edge information involved in the colon polyp images comparing with existing techniques. Our approach overcomes the limitations of existing colon polyp segmentation techniques. Experimental results on a large-scale annotated colon polyp image dataset demonstrate that our method excels in localizing and segmenting polyps of various sizes, shapes, and textures with high robustness.</div>
 
 ## 2. Architecture
 <img src="images/ari.png">
@@ -18,12 +18,8 @@ The proposed architecture is implemented using the PyTorch framework (1.7.1+cu10
 
 + downloading pvtv2 weights , which can be found in this [download link (Google Drive)](https://https://drive.google.com/drive/folders/1Eu8v9vMRvt-dyCH0XSV2i77lAd62nPXV). 
 
-## 3. Results
-### 3.1 Comparative Visualization of Lower-Accuracy Segmentation Methods on five datasets.
-<img src="images/result1.png">
-
-### 3.2 Comparative Visualization of Higher-Accuracy Segmentation Methods on five datasets.
-<img src="images/result2.png">
+## 3. Comparative Visualization of Lower-Accuracy Segmentation Methods on five datasets. 
+<img src="images/result.png">
 
 ## 4. Citation
 <pre>
