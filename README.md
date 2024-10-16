@@ -6,6 +6,7 @@ In the field of medical imaging, the automatic detection and segmentation of col
 
 ## 2. Architecture
 <img src="images/ari.png">
+<img src="images/SHAT.png">
 
 ## 3. Implementation
 The proposed architecture is implemented using the PyTorch framework (1.7.1+cu101) with 2 NVIDIA Tesla T4 with 16 GB Memory. 
